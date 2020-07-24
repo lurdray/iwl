@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <header class="top-area single-page" id="home">
+        <div class="top-area-bg" style=" background-image: url({% static 'img/slider/slider1.jpg' %});"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                {% include 'navbar.html' %}
+            </div>
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>About Us</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'service' %}">Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--ABOUT AREA-->
+    <section class="about-area gray-bg section-padding" style="background: linear-gradient(to bottom, white,purple); color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2 style="color: purple">welcome to interior wood-work limited !</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bloging col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="about-left-content-area wow fadeIn">
+                        <img src="{% static 'img/about/about.jpg' %}" alt=""><br><br>
+                        
+                    </div>
+                    <div class="about-left-content-area wow fadeIn">
+                        <img src="{% static 'img/about/about_details2.jpg' %}" alt=""><br><br>
+                        
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                    <div class="about-content-area wow fadeIn">
+                        <div class="about-content">
+                            <h2>We have years of experience in this passion</h2>
+                            <p><strong>We are a global supplier of top quality furniture, creating satisfied customers while providing an uptimum work environment and giving the best possible returns to our stake holders in woodwork industry, we have been in full production since 1998.<br><br> Interior Woodwork was founded on the principles of "Indigenous Excellence". <br><br> All our processes, systems procedures and general approach are geared towards ensuring a memorable and positive experience of quality and outstanding service from a wholly Nigerian furniture company. We consider this to be a competitive advantage.<strong></p>
+                            
+                        </div>
+                        <div class="about-count">
+                            <div class="single-about-count">
+                                <h4 style="color: purple"><i class="fa fa-suitcase"></i>962</h4>
+                                <h6 style="color: purple">Projects Completed</h6>
+                            </div>
+                            <div class="single-about-count">
+                                <h4 style="color: purple"><i class="fa fa-trophy">15</i></h4>
+                                <h6 style="color: purple">Awards</h6>
+                            </div>
+                            <div class="single-about-count">
+                                <h4 style="color: purple"><i class="fa fa-users"></i>789</h4>
+                                <h6 style="color: purple">Satisfied Customers</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+
+    <!--FAQS AREA-->
+    <section class="faqs-area section-padding wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="bloging col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="faqs-left-img">
+                        <img src="{% static 'img/about/about_details.jpg' %}" alt="">
+                    </div>
+                    <div class="faqs-left-img">
+                        <img src="{% static 'img/about/about-details1.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="faqs-list">
+                        <h3>why choose <span style="color: purple">Interior Wood-Work</span></h3>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel active">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" style="color: purple">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_one"><i class="fa fa-minus"></i>OUR VISION</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_one" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="color: black">To be the world's leading funiture Manufacturer delivering quality products and meeting all delivery schedules.</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" style="color: purple">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_two"><i class="fa fa-minus"></i>OUR CORE VALUES</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_two" class="panel-collapse collapse">
+                                    <div class="panel-body" style="color: black">Interior Woodwork commits to these values to enable her fulfill her stated mission.
+                                        <br><br>
+
+
+                                    <strong style="font-size: 20px">Integrity:</strong>IWL will be known to do business in a transparent and equitable manner
+                                    <br><br>
+
+                                    
+
+                                    <strong style="font-size: 20px">Customer-centric:</strong> Interior Woodwork Limited will be known to create a positive customer experience.
+                                    <br><br>
+
+                                    <strong style="font-size: 20px">Innovative:</strong> Interior Woodwork Limited will anticipate customer needs as well as surprise and delight them with a constant stream of relevant innovations.<br><br>
+
+                                   
+                                    <strong style="font-size: 20px">Trustworthiness:</strong> Interior Woodwork Limited strives to be honest and authentic, consistent, reliable and dependable, and always delivering on its promises.
+                                    <br><br>
+
+                                    <strong style="font-size: 20px">Professionalism:</strong> Interior Woodwork Limited is an organization that delivers best value to its customers with a dedicated and professional workforce.</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" style="color: purple">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_three"><i class="fa fa-minus"></i>OUR MISSION</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_three" class="panel-collapse collapse">
+                                    <div class="panel-body" style="color: black">To build a furniture Giant with innovative products and services, reaching every household while ensuring excellence in Customer Satisfaction and partnering with a highly developed and motivated workforce as well as ensuring rewards to all stakeholders</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQS AREA END-->
+
+    <!--PROMO AREA-->
+    <section class="promo-area">
+        <div class="promo-bottom-area section-padding">
+            <div class="promo-botton-area-bg" data-stellar-background-ratio="0.6" style="background-image: url({% static 'img/promo/promo_bottom_bg4.jpg' %})"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                        <div class="promo-bottom-content wow fadeIn">
+                            <h2>Interior WoodWork Limited</h2>
+                            <a href="{% url 'contact' %}" class="read-more">Get a quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROMO AREA END-->
+
+    
+
+    <!--CLIENTS AREA-->
+    <section class="clients-area section-padding wow fadeIn">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="client-list">
+                        <div class="single-client">
+                            <img src="{% static 'img/client/6.jpeg' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'img/client/3.jpeg' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'img/client/7.jpeg' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'img/client/8.jpeg' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'img/client/1.jpeg' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'img/client/2.jpeg' %}" alt="">
+                        </div>
+
+                        <div class="single-client">
+                            <img src="{% static 'img/client/4.jpeg' %}" alt="">
+                        </div>
+
+                        <div class="single-client">
+                            <img src="{% static 'img/client/5.jpeg' %}" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CLIENTS AREA END-->
+{% endblock %}
