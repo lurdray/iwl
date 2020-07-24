@@ -118,9 +118,9 @@
                         </div>
                         <div class="blog-details text-center" style="background-color: purple">
                             
-                            <h3><a href="single-blog.html">KITCHEN</a></h3>
+                            <h3><a href="{% url 'single_category' 'kitchen' %}">KITCHEN</a></h3>
                             
-                            <a href="http://127.0.0.1:8000/category/#Kitchens" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'kitchen' %}" class="read-more">View More</a>
                         </div>
                     </div>
 
@@ -131,9 +131,9 @@
                         </div>
                         <div class="blog-details text-center" style="background-color: purple;">
                             
-                            <h3><a href="single-blog.html">LIVING ROOM</a></h3>
+                            <h3><a href="{% url 'single_category' 'living-room' %}">LIVING ROOM</a></h3>
 
-                            <a href="http://127.0.0.1:8000/category/#living_rooms" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'living-room' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
@@ -152,9 +152,9 @@
                         </div>
                         <div class="blog-details text-center" style="background-color:  purple;">
                            
-                            <h3><a href="single-blog.html">OFFICE</a></h3>
+                            <h3><a href="{% url 'single_category' 'office' %}">OFFICE</a></h3>
                             
-                            <a href="http://127.0.0.1:8000/category/#Kitchens" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'office' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
@@ -166,9 +166,9 @@
                         </div>
                         <div class="blog-details text-center" style="background: purple">
                             
-                            <h3><a href="single-blog.html">DININGS</a></h3>
+                            <h3><a href="{% url 'single_category' 'dinning' %}">DININGS</a></h3>
                             
-                            <a href="http://127.0.0.1:8000/category/#dinnings" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'dinning' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
@@ -179,9 +179,9 @@
                         </div>
                         <div class="blog-details text-center" style="background: purple">
                             
-                            <h3><a href="single-blog.html">DOORS</a></h3>
+                            <h3><a href="{% url 'single_category' 'door' %}">DOORS</a></h3>
                             
-                            <a href="single-blog.html" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'door' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
@@ -196,9 +196,9 @@
                         </div>
                         <div class="blog-details text-center" style="background-color:  purple">
                             
-                            <h3><a href="single-blog.html">Wardrobes</a></h3>
+                            <h3><a href="{% url 'single_category' 'wardrobe' %}">Wardrobes</a></h3>
                             
-                            <a href="single-blog.html" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'wardrobe' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
@@ -210,9 +210,9 @@
                         </div>
                         <div class="blog-details text-center" style="background-color:  purple">
                             
-                            <h3><a href="single-blog.html">BEDROOM</a></h3>
+                            <h3><a href="{% url 'single_category' 'bedroom' %}">BEDROOM</a></h3>
                             
-                            <a href="http://127.0.0.1:8000/category/#bedrooms" class="read-more">View More</a>
+                            <a href="{% url 'single_category' 'bedroom' %}" class="read-more">View More</a>
                         </div>
                     </div>
                 
