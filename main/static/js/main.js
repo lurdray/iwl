@@ -134,10 +134,12 @@ jQuery(document).on('ready', function ($) {
         dots: true,
         merge: true,
         smartSpeed: 5000,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         nav: true,
         autoplay: true,
         autoplayTimeout: 5000,
-
+        responsiveClass: true,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: {

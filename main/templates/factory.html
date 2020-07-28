@@ -37,13 +37,13 @@
     </header>
     <!--END TOP AREA-->
 
-    <section class="" style="background-color: purple;">
+    <section class="" style="background-color: #f2f2f2;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
                     <div class="area-title text-center wow fadeIn"><br><br>
-                        <h2 style="color: white">Our Factory</h2>
-                        <p style="color: white"><strong>Our 20,00SqFt manufacturing facility is located in Idu layout, Abuja FCT where we provide an excellent bass for distribution of products to customers throughout Africa.<br><br>We have invested in expanding our production capability using state if the art machines, we produce 100% of what we sell</strong></p>
+                        <h2 style="color: #565655">Our Factory</h2>
+                        <p style="color: #565655">Our 20,000SqFt manufacturing facility is located in Idu layout, Abuja FCT where we provide an excellent base for distribution of products to customers throughout Africa.</p>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     <style type="text/css">
         .blog-image{
             transition: 2s;
-            box-shadow: 1px 9px 40px 12px rgba(255,110,110,0.9);
+            box-shadow: 1px 9px 40px 12px rgba(0,0,0,0.5);
             transform: scale(0.98);
             background-color: purple;
         }
@@ -64,7 +64,7 @@
     </style>
 
     <!--BLOG AREA-->
-    <section class="blog-area blog-page gray-bg section-padding">
+    <section class="blog-area blog-page gray-bg section-padding" style="background-color: white">
         <div class="container">
             <div class="row">
 
@@ -76,8 +76,8 @@
                                 <div class="blog-image">
                                     <img src="{{ item.image.url }}" alt="">
                                 </div>
-                                
                             </div>
+                             <p class="text-center" style="font-size: 25px; color: black">{{item.title}}</p>
                         </div>
 
                     {% endfor %}

@@ -146,6 +146,7 @@ class ProjectModel(models.Model):
 class CategoryModel(models.Model):
 	image = models.ImageField(upload_to='factory_images')
 	category = models.CharField(max_length=60, default="category image")
+	title = models.CharField(max_length=60, default="Project image")
 	pub_date = models.DateTimeField(default=timezone.now)
 
 	def __str__(self):

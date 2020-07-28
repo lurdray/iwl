@@ -8,7 +8,7 @@
 
     <!--START TOP AREA-->
      <header class="top-area single-page" id="home">
-        <div class="top-area-bg" style=" background-image: url({% static 'img/slider/project.jpg' %});"></div>
+        <div class="top-area-bg" style=" background-image: url({% static 'img/slider/slider13.jpg' %});"></div>
         <div class="header-top-area">
             <!--MAINMENU AREA-->
             <div class="mainmenu-area" id="mainmenu-area">
@@ -50,7 +50,7 @@
                 <div class="col-md-12 col-xs-12">
                     <ul class="about-details-menu">
                         <li class="active"><a data-toggle="tab" href="#bedrooms" style="font-size: 15px">Bedroom</a></li>
-                        <li><a data-toggle="tab" href="#dining" style="font-size: 15px">Dinning</a></li>
+                        <li><a data-toggle="tab" href="#dining" style="font-size: 15px">Dining</a></li>
                         <li><a data-toggle="tab" href="#Doors" style="font-size: 15px">Door</a></li>
                          <li><a data-toggle="tab" href="#Kitchens" style="font-size: 15px">Kitchen</a></li>
                         <li><a data-toggle="tab" href="#living_rooms" style="font-size: 15px">Living Room</a></li>
@@ -75,6 +75,7 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                     <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
                                 {% endfor %}
                             </div>
@@ -88,8 +89,11 @@
                                         <div class="member-image">
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
+
                                     </div>
+                                     <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
+
                                 {% endfor %}
                             </div>
                         </div>
@@ -102,11 +106,12 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                     <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
                                 {% endfor %}
                             </div>
                         </div>
-                        <div id="office" class="team-list tab-pane fade">
+                        <div id="offices" class="team-list tab-pane fade">
                             <div class="row">
                                 {% for item in offices %}
                                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
@@ -115,11 +120,12 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                     <p style="color:#565655; font-size: 25px">{{item.title}}</p>
                                 </div>
                                 {% endfor %}
                             </div>
                         </div>
-                        <div id="dinnings" class="team-list tab-pane fade">
+                        <div id="dinings" class="team-list tab-pane fade">
                             <div class="row">
                                 {% for item in dinnings %}
                                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
@@ -128,6 +134,7 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                     <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
                                 {% endfor %}
                             </div>
@@ -141,7 +148,9 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                         <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
+                                
                                 {% endfor %}
                             </div>
                         </div>
@@ -154,6 +163,7 @@
                                             <img src="{{ item.image.url }}" alt="">
                                         </div>
                                     </div>
+                                     <p style="color: #565655; font-size: 25px">{{item.title}}</p>
                                 </div>
                                 {% endfor %}
                             
