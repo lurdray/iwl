@@ -682,6 +682,11 @@ ul#nav li ul a,
 /*------------------------------
     2.4 WELCOME SLIDER AREA
 --------------------------------*/
+.preeloader{
+        height: 100%;
+    position: relative;
+    z-index: 9;
+}
 
 .welcome-slider-area {
     height: 100%;
@@ -758,11 +763,11 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: rgba(218, 112, 214, 0.5);
+    background: rgba(218, 112, 214, 0);
 }
 
 .slider-bg-two {
-    background: url(img/slider/slide_2.jpg) no-repeat scroll center center / cover;
+    background: rgba(218, 112, 214, 0) url(img/slider/slide_2.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-three {

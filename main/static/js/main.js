@@ -246,6 +246,6 @@ jQuery(window).on('load', function () {
     /*--------------------------
         PRE LOADER
     ----------------------------*/
-    $(".preeloader").fadeOut(1000);
+    $(".navbar-header1").fadeOut(6000);
 
 });

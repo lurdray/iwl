@@ -13,11 +13,11 @@ def index(request):
 	dinning = DinningCategory.objects.order_by("-pub_date")[0]
 	door = DoorCategory.objects.order_by("-pub_date")[0]
 
-	wardrobe = WardrobeCategory.objects.order_by("-pub_date")[0]
 	center = CenterCategory.objects.order_by("-pub_date")[0]
 	tv = TvCategory.objects.order_by("-pub_date")[0]
 
 	client = ClientCategory.objects.order_by("-pub_date")[0]
+	wardrobe = WardrobeCategory.objects.order_by("-pub_date")[0]
 	
 	context = {"kitchen": kitchen, "living": living, "bedroom": bedroom, "office": office,
 	 "dinning": dinning, "door": door, "wardrobe": wardrobe, "center": center, "tv": tv, "client": client}
@@ -58,7 +58,7 @@ def contact(request):
 		contact_model = ContactModel.objects.create(name=name, email=email, phone=phone, message=message)
 		contact_model.save()
 
-		response = "Thank You For Reeaching Out!"
+		response = "Thank You For Reaching Out!"
 
 		context = {"response": response}
 		return render(request, "contact.html", context)

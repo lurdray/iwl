@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+ <!--- PRELOADER -->
 
+    
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -23,6 +25,7 @@
     <header class="top-area" id="home">
         <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
         <div class="header-top-area">
+            
             <!--MAINMENU AREA-->
             <div class="mainmenu-area" id="mainmenu-area">
                 <div class="mainmenu-area-bg"></div>
@@ -30,12 +33,15 @@
             </div>
             <!--END MAINMENU AREA END-->
         </div>
+
         <!--HOME SLIDER AREA-->
         <div class="welcome-slider-area">
-             <div class="welcome-single-slide slider-bg-two" style=" background-image: url({% static 'img/slider/slider13.jpg' %});"  
+             
+            <div class="welcome-single-slide slider-bg-two" style=" background-image: url({% static 'img/slider/slider13.jpg' %});"  
             >
                 <div class="container">
                     <div class="row flex-v-center">
+
                         <div class="col-md-10 col-md-offset-1">
                             <div class="welcome-text text-center">
                                 <h1 style="font-family: Oswald">interior woodwork limited</h1>
@@ -64,13 +70,13 @@
                     </div>
                 </div>
             </div>
-            <div class="welcome-single-slide slider-bg-two" style=" background-image: url({% static 'img/slider/slider2.jpg' %});"  
+            <div class="welcome-single-slide slider-bg-two" style=" background-image: url({% static 'img/slider/slider6.jpg' %});"  
             >
                 <div class="container">
                     <div class="row flex-v-center">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="welcome-text text-center">
-                                <h1 style="font-family: Oswald">Add extra aethetics to your kitchen</h1>
+                                <h1 style="font-family: Oswald">Add extra aesthetics to your kitchen</h1>
                                 <p style="font-size: 18px">We can build an amazing kitchen for you</p>
                                 <div class="home-button">
                                     <a href="{% url 'factory' %}">Factory</a>
@@ -99,6 +105,7 @@
             </div>
         </div>
         <!--END HOME SLIDER AREA-->
+
     </header>
     <!--END TOP AREA-->
 
@@ -301,7 +308,7 @@
                                         
                                     </div>
                                 </div>
-                                <div  style=" background: rgba(0, 0, 0, 0) url({% static 'img/service/service1.jpg' %}) no-repeat scroll center center / contain; position: relative;">
+                                <div  style=" background: rgba(0, 0, 0, 0) url({% static 'img/service/service0.jpg' %}) no-repeat scroll center center / contain; position: relative;">
 
                                     <div class="catalouge-content ">
                                         <h3>Why Choose Us ?</h3>
