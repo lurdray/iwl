@@ -9,7 +9,11 @@
 
     <!--START TOP AREA-->
     <header class="top-area single-page" id="home">
-        <div class="top-area-bg" style=" background-image: url({% static 'img/slider/slider8.jpg' %});"></div>
+    	{% if item %}
+    		<div class="top-area-bg" style=" background-image: url({{ item.image.url }});"></div>
+    	{% else %}
+    		<div class="top-area-bg" style=" background-image: url({% static 'img/slider/slider15.jpg' %});"></div>
+    	{% endif %}
         <div class="header-top-area">
             <!--MAINMENU AREA-->
             <div class="mainmenu-area" id="mainmenu-area">

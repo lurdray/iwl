@@ -27,9 +27,11 @@ def index(request):
 
 def SingleCategoryView(request, slug):
 	items = CategoryModel.objects.filter(category=slug)
-	
-	
-	context = {"items": items, "category": slug}
+	try:
+		item = items[0]
+		context = {"items": items, "category": slug, "item": item}
+	except:
+		context = {"items": items, "category": slug}
 	
 	return render(request, "single_category.html", context)
 
